@@ -66,3 +66,14 @@ clarity-first
 ```
 
 Re-runs the installer. Pulls latest automatically.
+
+---
+
+## Author
+
+<img src="https://github.com/drmarceloclipi-star.png" width="64" align="left" style="border-radius:50%;margin-right:12px" />
+
+**Dr. Marcelo Cavalcanti**  
+[@drmarceloclipi-star](https://github.com/drmarceloclipi-star)
+
+<br clear="left" />
