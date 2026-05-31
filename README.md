@@ -1,4 +1,4 @@
-# clarity-first
+# Clarity-first
 
 **First-time users experience all first.**
 
