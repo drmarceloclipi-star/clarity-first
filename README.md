@@ -1,14 +1,17 @@
-# Clarity-first
+<img src="https://github.com/drmarceloclipi-star.png" width="96" align="left" style="margin-right:16px" />
+
+**Dr. Marcelo Cavalcanti**  
+[@drmarceloclipi-star](https://github.com/drmarceloclipi-star)
+
+<br clear="left" />
+
+---
+
+# clarity-first
 
 **First-time users experience all first.**
 
 A [Claude Code](https://claude.ai/code) skill that reviews your UI as a stranger seeing it once — catching every assumption, every friction point, every moment a new user would stop and think.
-
-<img src="https://github.com/drmarceloclipi-star.png" width="40" align="left" style="margin-right:10px" />
-
-**Dr. Marcelo Cavalcanti** · [@drmarceloclipi-star](https://github.com/drmarceloclipi-star)
-
-<br clear="left" />
 
 ---
 
