@@ -22,7 +22,7 @@ It asks the questions you've stopped asking.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/install.sh | bash
+npx skills@latest add drmarceloclipi-star/clarity-first
 ```
 
 Restart Claude Code. Done.
@@ -61,7 +61,7 @@ Mention any of these in your prompt and the skill activates:
 ## Update
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/install.sh | bash
+npx skills@latest add drmarceloclipi-star/clarity-first
 ```
 
 Same command. Always pulls the latest.
