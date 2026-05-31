@@ -1,21 +1,23 @@
 # clarity-first
 
-> *First-time users experience all first.*
+**First-time users experience all first.**
 
-A [Claude Code](https://claude.ai/code) skill that evaluates every screen as if seeing the app for the first time — catching what familiarity blinds you to.
+A [Claude Code](https://claude.ai/code) skill that reviews your UI as a stranger seeing it once — catching every assumption, every friction point, every moment a new user would stop and think.
 
-## What it does
+---
 
-Applies a **First-Time User Experience (FTUE)** lens to UI reviews, screen designs, and user flows. Triggers automatically when you ask for UX feedback, onboarding review, or UI simplification.
+## The problem
 
-The core test every screen must pass:
+You built something great. But you can't unsee what you know.  
+Every label that "makes sense", every flow that "feels natural" — it only feels that way because you built it.  
+First-time users don't have your context. And they won't ask. They'll just leave.
 
-1. **Understand instantly?** — No reading, thinking, or scanning. Obvious on sight.
-2. **Need this?** — Does a first-time user need this element right now?
-3. **Too much?** — Would removing half hurt the user?
-4. **Simpler possible?** — Fewer steps, words, or choices?
+## The fix
 
-If any answer is *no / yes / yes / yes* — redesign.
+`clarity-first` applies a **First-Time User Experience (FTUE)** lens to every screen review.  
+It asks the questions you've stopped asking.
+
+---
 
 ## Install
 
@@ -23,14 +25,43 @@ If any answer is *no / yes / yes / yes* — redesign.
 curl -fsSL https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/install.sh | bash
 ```
 
-Restart Claude Code. The `clarity-first` skill is now active.
+Restart Claude Code. Done.
 
-## Usage
+---
 
-Mention any of these in your prompt:
+## How it works
+
+Every element on every screen is tested against four questions:
+
+| Question | Pass condition |
+|---|---|
+| Understand instantly? | No reading, thinking, or scanning required |
+| Need this now? | First-time user needs this element on first visit |
+| Too much? | Removing half would hurt the experience |
+| Simpler possible? | No version exists with fewer steps, words, or choices |
+
+One "no / yes / yes / yes" → redesign.
+
+---
+
+## Trigger
+
+Mention any of these in your prompt and the skill activates:
 
 `clarity-first` · `FTUE` · `first-time user` · `onboarding` · `UX review` · `simplify UI`
 
+---
+
+## The golden rule
+
+> If a first-time user stops to think, the design is not finished.
+
+---
+
 ## Update
 
-Re-run the install command. It pulls the latest version automatically.
+```bash
+curl -fsSL https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/install.sh | bash
+```
+
+Same command. Always pulls the latest.
