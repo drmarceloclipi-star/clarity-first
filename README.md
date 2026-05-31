@@ -22,7 +22,8 @@ It asks the questions you've stopped asking.
 ## Install
 
 ```bash
-npx skills@latest add drmarceloclipi-star/clarity-first
+cargo install --git https://github.com/drmarceloclipi-star/clarity-first
+clarity-first
 ```
 
 Restart Claude Code. Done.
@@ -61,7 +62,7 @@ Mention any of these in your prompt and the skill activates:
 ## Update
 
 ```bash
-npx skills@latest add drmarceloclipi-star/clarity-first
+clarity-first
 ```
 
-Same command. Always pulls the latest.
+Re-runs the installer. Pulls latest automatically.

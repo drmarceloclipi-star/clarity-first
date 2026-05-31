@@ -1,0 +1,11 @@
+[package]
+name = "clarity-first"
+version = "0.1.0"
+edition = "2021"
+description = "Installs the clarity-first Claude Code skill"
+repository = "https://github.com/drmarceloclipi-star/clarity-first"
+license = "MIT"
+
+[[bin]]
+name = "clarity-first"
+path = "src/main.rs"
