@@ -30,6 +30,15 @@ It asks the questions you've stopped asking.
 
 ## Install
 
+**Plugin (recommended)** — versioned, one-command updates:
+
+```
+/plugin marketplace add drmarceloclipi-star/clarity-first
+/plugin install clarity-first
+```
+
+**Cargo (alternative)** — copies the skill into `~/.claude/skills`:
+
 ```bash
 cargo install --git https://github.com/drmarceloclipi-star/clarity-first
 clarity-first
@@ -69,6 +78,14 @@ Mention any of these in your prompt and the skill activates:
 ---
 
 ## Update
+
+Plugin install:
+
+```
+/plugin update clarity-first
+```
+
+Cargo install:
 
 ```bash
 clarity-first

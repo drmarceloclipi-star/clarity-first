@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "clarity-first",
+  "version": "0.1.0",
+  "description": "First-Time User Experience lens for UI review and design decisions. Evaluates every screen as if seeing the app for the first time.",
+  "author": {
+    "name": "Marcelo Cavalcanti",
+    "url": "https://github.com/drmarceloclipi-star"
+  },
+  "homepage": "https://github.com/drmarceloclipi-star/clarity-first",
+  "repository": "https://github.com/drmarceloclipi-star/clarity-first",
+  "license": "MIT",
+  "keywords": ["ftue", "ux", "ui-review", "onboarding", "design", "first-time-user"]
+}
