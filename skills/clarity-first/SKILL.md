@@ -1,6 +1,10 @@
 ---
 name: clarity-first
-description: First-Time User Experience lens for UI review and design decisions. Evaluates every screen as if seeing the app for the first time. Use when reviewing UI, designing screens, implementing features, or auditing user flows. Triggers on: clarity-first, FTUE, first-time user, onboarding, UX review, simplify UI.
+description: >
+  First-Time User Experience lens for UI review and design decisions. Evaluates
+  every screen as if seeing the app for the first time. Use when reviewing UI,
+  designing screens, implementing features, or auditing user flows. Triggers on:
+  clarity-first, FTUE, first-time user, onboarding, UX review, simplify UI.
 ---
 
 # Clarity First — First-Time User Experience
