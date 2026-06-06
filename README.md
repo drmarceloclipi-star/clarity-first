@@ -55,7 +55,7 @@ That's the whole point — it returns **what to cut, fix, or keep**, not vague a
 
 ```
 /plugin marketplace add drmarceloclipi-star/clarity-first
-/plugin install clarity-first
+/plugin install clarity-first@clarity-first
 ```
 
 Restart Claude Code. Done.
@@ -108,7 +108,7 @@ Mention any of these in your prompt and the skill activates:
 ## Update
 
 ```
-/plugin update clarity-first
+/plugin update clarity-first@clarity-first
 ```
 
 Cargo users: re-run `clarity-first`.
