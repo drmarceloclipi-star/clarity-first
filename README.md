@@ -4,9 +4,12 @@
 
 **Review your UI as a stranger seeing it for the first time.**
 
-A [Claude Code](https://claude.ai/code) skill that catches every assumption, every friction point, every moment a new user would stop and think.
+An agent skill that catches every assumption, every friction point, every moment a new user would stop and think.
+
+Runs in **[Claude Code](https://claude.ai/code)**, **Codex CLI**, **Cursor**, **Zed**, **Windsurf**, and **Gemini CLI** — anything that reads the [`AGENTS.md`](https://agents.md) standard.
 
 [![Plugin](https://img.shields.io/badge/Claude_Code-plugin-7c3aed)](https://claude.ai/code)
+[![AGENTS.md](https://img.shields.io/badge/AGENTS.md-ready-000000)](https://agents.md)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/drmarceloclipi-star/clarity-first/releases)
 [![License](https://img.shields.io/badge/license-MIT-green)](#license)
 
@@ -53,6 +56,8 @@ That's the whole point — it returns **what to cut, fix, or keep**, not vague a
 
 ## Install
 
+**Claude Code:**
+
 ```
 /plugin marketplace add drmarceloclipi-star/clarity-first
 /plugin install clarity-first@clarity-first
@@ -60,8 +65,17 @@ That's the whole point — it returns **what to cut, fix, or keep**, not vague a
 
 Restart Claude Code. Done.
 
+**Codex CLI · Cursor · Zed · Windsurf · Gemini CLI:** grab the portable entrypoint files — no plugin system needed:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/AGENTS.md
+curl -fsSLO https://raw.githubusercontent.com/drmarceloclipi-star/clarity-first/main/GEMINI.md
+```
+
+Drop in your project root, or in `~/.codex/` / `~/.gemini/` to enable it everywhere. Any agent that reads the open [`AGENTS.md`](https://agents.md) standard picks it up automatically.
+
 <details>
-<summary>Prefer Cargo?</summary>
+<summary>Prefer Cargo? (Claude Code)</summary>
 
 Symlinks the skill into `~/.claude/skills`:
 
