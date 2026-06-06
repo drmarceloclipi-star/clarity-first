@@ -37,7 +37,7 @@ It asks the questions you've stopped asking.
 /plugin install clarity-first
 ```
 
-**Cargo (alternative)** — copies the skill into `~/.claude/skills`:
+**Cargo (alternative)** — symlinks the skill into `~/.claude/skills`:
 
 ```bash
 cargo install --git https://github.com/drmarceloclipi-star/clarity-first

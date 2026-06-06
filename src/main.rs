@@ -13,10 +13,10 @@ fn main() {
     });
 
     let src_dir: PathBuf = [&home, ".claude", "plugins-src", PLUGIN_NAME].iter().collect();
-    let plugin_dir: PathBuf = [&home, ".claude", "plugins"].iter().collect();
-    let link_path = plugin_dir.join(PLUGIN_NAME);
+    let skills_dir: PathBuf = [&home, ".claude", "skills"].iter().collect();
+    let link_path = skills_dir.join(PLUGIN_NAME);
 
-    fs::create_dir_all(&plugin_dir).expect("failed to create plugins dir");
+    fs::create_dir_all(&skills_dir).expect("failed to create skills dir");
     fs::create_dir_all(src_dir.parent().unwrap()).expect("failed to create plugins-src dir");
 
     if src_dir.join(".git").exists() {
@@ -27,11 +27,17 @@ fn main() {
         run("git", &["clone", REPO, src_dir.to_str().unwrap()]);
     }
 
+    let skill_target = src_dir.join("skills").join(PLUGIN_NAME);
+    if !skill_target.join("SKILL.md").exists() {
+        eprintln!("skill not found at {}", skill_target.display());
+        exit(1);
+    }
+
     if link_path.exists() || link_path.is_symlink() {
         fs::remove_file(&link_path).expect("failed to remove existing symlink");
     }
 
-    unix_fs::symlink(&src_dir, &link_path).expect("failed to create symlink");
+    unix_fs::symlink(&skill_target, &link_path).expect("failed to create symlink");
     println!("Done. Restart Claude Code to activate the '{}' skill.", PLUGIN_NAME);
 }
 
